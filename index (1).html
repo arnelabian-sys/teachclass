@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeachClass.com</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2f7 0%, #dfe9f3 100%);
+    color: #1f2a3c;
+    min-height: 100vh;
+  }
+  header {
+    background: #1e3a5f;
+    padding: 22px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  }
+  header h1 {
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  header p {
+    color: #cbd9ec;
+    margin-top: 6px;
+    font-size: 0.95rem;
+  }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  .photo-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    margin-bottom: 36px;
+  }
+  .photo-card img {
+    width: 100%;
+    display: block;
+  }
+  .caption {
+    padding: 16px 20px;
+    text-align: center;
+    color: #52627a;
+    font-size: 0.95rem;
+  }
+  .team-title {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #1e3a5f;
+    margin-bottom: 20px;
+  }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  .member-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+  }
+  .member-card:hover {
+    transform: translateY(-4px);
+  }
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #1e3a5f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 auto 14px;
+  }
+  .member-card h3 {
+    color: #1f2a3c;
+    font-size: 1.1rem;
+  }
+  .member-card p {
+    color: #7a8aa0;
+    font-size: 0.85rem;
+    margin-top: 4px;
+  }
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: #7a8aa0;
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>TeachClass.com</h1>
+  <p>Together in the Classroom, Together in Purpose</p>
+</header>
+
+<main>
+  <div class="photo-card">
+    <img src="team-photo.png" alt="Photo of the three teachers together in a classroom">
+    <div class="caption">Our team, ready for the school year.</div>
+  </div>
+
+  <h2 class="team-title">Meet the Team</h2>
+  <div class="team-grid">
+    <div class="member-card">
+      <div class="avatar">C</div>
+      <h3>Bulang, Charity O.</h3>
+      <p>Teacher</p>
+    </div>
+    <div class="member-card">
+      <div class="avatar">K</div>
+      <h3>Toraya, Kissia Angele R.</h3>
+      <p>Teacher</p>
+    </div>
+    <div class="member-card">
+      <div class="avatar">S</div>
+      <h3>Odiong, Susana J.</h3>
+      <p>Teacher</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 TeachClass.com
+</footer>
+
+</body>
+</html>
